@@ -22,16 +22,23 @@
         <span>Ya no estés triste 💖😊</span>
     </div>
     <div class="button">
-        <!-- Botón con redirección al link proporcionado -->
-        <button class="botones" onclick="window.location.href='https://alexoglz.github.io/yellow-flowers/'">
+        <!-- Botón sin href -->
+        <button class="botones" id="redirectButton">
             ¡Presiona para ya no estar triste!
         </button>
     </div>
 
     <!-- Créditos -->
     <div class="credits">
-        
+        <p>&copy; 2023 Aprende Con JS.</p>
     </div>
+
+    <!-- Script de JavaScript para manejar la redirección -->
+    <script>
+        document.getElementById("redirectButton").addEventListener("click", function() {
+            window.location.href = "https://alexoglz.github.io/yellow-flowers/";
+        });
+    </script>
 </body>
 
 </html>
